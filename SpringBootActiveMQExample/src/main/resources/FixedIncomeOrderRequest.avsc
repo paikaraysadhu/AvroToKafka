@@ -1,0 +1,116 @@
+{
+  "type" : "record",
+  "name" : "FixedIncomeOrderRequest",
+  "namespace" : "org.dw.dto",
+  "fields" : [ {
+    "name" : "accountID",
+    "type" : "string"
+  }, {
+    "name" : "accountNo",
+    "type" : "string"
+  }, {
+    "name" : "commissionOverride",
+    "type" : {
+      "type" : "record",
+      "name" : "CommissionOverride",
+      "fields" : [ {
+        "name" : "commissionAmount",
+        "type" : {
+          "type" : "string",
+          "java-class" : "java.math.BigDecimal"
+        }
+      }, {
+        "name" : "commissionID",
+        "type" : "string"
+      }, {
+        "name" : "commissionOverrideDesc",
+        "type" : "string"
+      }, {
+        "name" : "commissionOverrideType",
+        "type" : "string"
+      }, {
+        "name" : "secOverride",
+        "type" : {
+          "type" : "string",
+          "java-class" : "java.math.BigDecimal"
+        }
+      }, {
+        "name" : "tafOverride",
+        "type" : {
+          "type" : "string",
+          "java-class" : "java.math.BigDecimal"
+        }
+      } ]
+    }
+  }, {
+    "name" : "correlationID",
+    "type" : "string"
+  }, {
+    "name" : "currency",
+    "type" : "string"
+  }, {
+    "name" : "encrypted",
+    "type" : "boolean"
+  }, {
+    "name" : "instrumentID",
+    "type" : "string"
+  }, {
+    "name" : "isin",
+    "type" : "string"
+  }, {
+    "name" : "journalExcessFunds",
+    "type" : "boolean"
+  }, {
+    "name" : "marginLiquidate",
+    "type" : "boolean"
+  }, {
+    "name" : "mt",
+    "type" : "string"
+  }, {
+    "name" : "orderCapacity",
+    "type" : "string"
+  }, {
+    "name" : "orderID",
+    "type" : "string"
+  }, {
+    "name" : "orderNo",
+    "type" : "string"
+  }, {
+    "name" : "orderQty",
+    "type" : "string"
+  }, {
+    "name" : "orderType",
+    "type" : "string"
+  }, {
+    "name" : "price",
+    "type" : {
+      "type" : "string",
+      "java-class" : "java.math.BigDecimal"
+    }
+  }, {
+    "name" : "sales_credit",
+    "type" : {
+      "type" : "record",
+      "name" : "Sales_credit",
+      "fields" : [ {
+        "name" : "amount",
+        "type" : "string"
+      }, {
+        "name" : "currency",
+        "type" : "string"
+      } ]
+    }
+  }, {
+    "name" : "side",
+    "type" : "string"
+  }, {
+    "name" : "time_in_force",
+    "type" : "string"
+  }, {
+    "name" : "userID",
+    "type" : "string"
+  }, {
+    "name" : "wlpID",
+    "type" : "string"
+  } ]
+}
